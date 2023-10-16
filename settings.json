@@ -31,29 +31,25 @@
     ],
     "copyFormatting": "none",
     "copyOnSelect": false,
-    "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+    "defaultProfile": "{51855cb2-8cce-5362-8f54-464b92b32386}",
     "launchMode": "maximized",
+    "newTabMenu": 
+    [
+        {
+            "type": "remainingProfiles"
+        }
+    ],
     "profiles": 
     {
         "defaults": 
         {
-            "colorScheme": "Catppuccin Macchiato",
-            "cursorShape": "filledBox",
-            "experimental.retroTerminalEffect": false,
-            "font": 
-            {
-                "face": "FiraCode Nerd Font Mono",
-                "size": 12
-            },
-            "opacity": 91,
-            "padding": "10",
-            "tabColor": "#24273A",
-            "useAcrylic": true
+            "colorScheme": "One Half Dark",
+            "font":{ "face":"JetBrainsMono Nerd Font"}
         },
         "list": 
         [
             {
-                "commandline": "powershell -nologo",
+                "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -nologo",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": false,
                 "name": "Windows PowerShell"
@@ -71,11 +67,17 @@
                 "source": "Windows.Terminal.Azure"
             },
             {
+                "bellStyle": "window",
                 "guid": "{51855cb2-8cce-5362-8f54-464b92b32386}",
                 "hidden": false,
                 "name": "Ubuntu",
-                "source": "CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc",
-                "startingDirectory": "C:\\Users\\kobie"
+                "source": "CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc"
+            },
+            {
+                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+                "hidden": true,
+                "name": "Ubuntu",
+                "source": "Windows.Terminal.Wsl"
             }
         ]
     },
@@ -128,75 +130,6 @@
             "yellow": "#C19C00"
         },
         {
-            "background": "#303446",
-            "black": "#51576D",
-            "blue": "#8CAAEE",
-            "brightBlack": "#626880",
-            "brightBlue": "#8CAAEE",
-            "brightCyan": "#81C8BE",
-            "brightGreen": "#A6D189",
-            "brightPurple": "#F4B8E4",
-            "brightRed": "#E78284",
-            "brightWhite": "#A5ADCE",
-            "brightYellow": "#E5C890",
-            "cursorColor": "#F2D5CF",
-            "cyan": "#81C8BE",
-            "foreground": "#C6D0F5",
-            "green": "#A6D189",
-            "name": "Catppuccin Frapp\u00e9",
-            "purple": "#F4B8E4",
-            "red": "#E78284",
-            "selectionBackground": "#F2D5CF",
-            "white": "#B5BFE2",
-            "yellow": "#E5C890"
-        },
-        {
-            "background": "#24273A",
-            "black": "#494D64",
-            "blue": "#8AADF4",
-            "brightBlack": "#5B6078",
-            "brightBlue": "#8AADF4",
-            "brightCyan": "#8BD5CA",
-            "brightGreen": "#A6DA95",
-            "brightPurple": "#F5BDE6",
-            "brightRed": "#ED8796",
-            "brightWhite": "#A5ADCB",
-            "brightYellow": "#EED49F",
-            "cursorColor": "#F4DBD6",
-            "cyan": "#8BD5CA",
-            "foreground": "#CAD3F5",
-            "green": "#A6DA95",
-            "name": "Catppuccin Macchiato",
-            "purple": "#F5BDE6",
-            "red": "#ED8796",
-            "selectionBackground": "#F4DBD6",
-            "white": "#B8C0E0",
-            "yellow": "#EED49F"
-        },
-        {
-            "background": "#1E1E1E",
-            "black": "#000000",
-            "blue": "#2472C8",
-            "brightBlack": "#666666",
-            "brightBlue": "#3B8EEA",
-            "brightCyan": "#29B8DB",
-            "brightGreen": "#23D18B",
-            "brightPurple": "#D670D6",
-            "brightRed": "#F14C4C",
-            "brightWhite": "#E5E5E5",
-            "brightYellow": "#F5F543",
-            "cursorColor": "#FFFFFF",
-            "cyan": "#11A8CD",
-            "foreground": "#CCCCCC",
-            "green": "#0DBC79",
-            "name": "Dark+",
-            "purple": "#BC3FBC",
-            "red": "#CD3131",
-            "selectionBackground": "#3A3D41",
-            "white": "#E5E5E5",
-            "yellow": "#E5E510"
-        },
-        {
             "background": "#282C34",
             "black": "#282C34",
             "blue": "#61AFEF",
@@ -241,52 +174,6 @@
             "selectionBackground": "#FFFFFF",
             "white": "#FAFAFA",
             "yellow": "#C18301"
-        },
-        {
-            "background": "#191724",
-            "black": "#706E86",
-            "blue": "#31748F",
-            "brightBlack": "#706E86",
-            "brightBlue": "#31748F",
-            "brightCyan": "#EBBCBA",
-            "brightGreen": "#9CCFD8",
-            "brightPurple": "#C4A7E7",
-            "brightRed": "#EB6F92",
-            "brightWhite": "#E0DEF4",
-            "brightYellow": "#F6C177",
-            "cursorColor": "#FFFFFF",
-            "cyan": "#EBBCBA",
-            "foreground": "#E0DEF4",
-            "green": "#9CCFD8",
-            "name": "Rose Pine",
-            "purple": "#C4A7E7",
-            "red": "#EB6F92",
-            "selectionBackground": "#FFFFFF",
-            "white": "#E0DEF4",
-            "yellow": "#F6C177"
-        },
-        {
-            "background": "#09141B",
-            "black": "#17384C",
-            "blue": "#1E4950",
-            "brightBlack": "#434B53",
-            "brightBlue": "#1BBCDD",
-            "brightCyan": "#87ACB4",
-            "brightGreen": "#628D98",
-            "brightPurple": "#BBE3EE",
-            "brightRed": "#D48678",
-            "brightWhite": "#FEE4CE",
-            "brightYellow": "#FDD39F",
-            "cursorColor": "#FCA02F",
-            "cyan": "#50A3B5",
-            "foreground": "#DEB88D",
-            "green": "#027C9B",
-            "name": "SeaShells",
-            "purple": "#68D4F1",
-            "red": "#D15123",
-            "selectionBackground": "#1E4962",
-            "white": "#DEB88D",
-            "yellow": "#FCA02F"
         },
         {
             "background": "#002B36",
@@ -425,29 +312,53 @@
             "selectionBackground": "#FFFFFF",
             "white": "#C0C0C0",
             "yellow": "#808000"
+        }
+    ],
+    "theme": "dark",
+    "themes": 
+    [
+        {
+            "name": "legacyDark",
+            "tab": 
+            {
+                "background": null,
+                "showCloseButton": "always",
+                "unfocusedBackground": null
+            },
+            "window": 
+            {
+                "applicationTheme": "dark",
+                "useMica": false
+            }
         },
         {
-            "background": "#1F1F28",
-            "black": "#1F1F28",
-            "blue": "#7EB3C9",
-            "brightBlack": "#3C3C51",
-            "brightBlue": "#7BC2DF",
-            "brightCyan": "#7BC2DF",
-            "brightGreen": "#9EC967",
-            "brightPurple": "#A98FD2",
-            "brightRed": "#EC818C",
-            "brightWhite": "#A8A48D",
-            "brightYellow": "#F1C982",
-            "cursorColor": "#E6E0C2",
-            "cyan": "#7EB3C9",
-            "foreground": "#DDD8BB",
-            "green": "#98BC6D",
-            "name": "kanagawabones",
-            "purple": "#957FB8",
-            "red": "#E46A78",
-            "selectionBackground": "#49473E",
-            "white": "#DDD8BB",
-            "yellow": "#E5C283"
+            "name": "legacyLight",
+            "tab": 
+            {
+                "background": null,
+                "showCloseButton": "always",
+                "unfocusedBackground": null
+            },
+            "window": 
+            {
+                "applicationTheme": "light",
+                "useMica": false
+            }
+        },
+        {
+            "name": "legacySystem",
+            "tab": 
+            {
+                "background": null,
+                "showCloseButton": "always",
+                "unfocusedBackground": null
+            },
+            "window": 
+            {
+                "applicationTheme": "system",
+                "useMica": false
+            }
         }
-    ]
+    ],
+    "useAcrylicInTabRow": true
 }
