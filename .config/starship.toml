@@ -2,7 +2,7 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 # Custom format
-format = """$os [$username]()[at](bold green) ($directory)($git_branch)($git_status)$character"""
+format = """$os [$username]()[at](bold #0D7C66) ($directory)($git_branch)($git_status)$character """
 
 # Inserts a blank line between shell prompts
 add_newline = false
@@ -28,31 +28,26 @@ format = "[$path]($style)[$read_only]($read_only_style) "
 disabled = true
 
 [character]
-success_symbol = "[⤏](bold green)"
-error_symbol   = "[⤏](bold red)"
+success_symbol = "[➞](bold green)"
+error_symbol   = "[➞](bold red)"
 
 [git_branch]
-format = "via [$branch]($style) "
+format = 'via [$branch](bold #7695FF) '
 truncation_length = 50
 truncation_symbol = "…/"
 style = "bold green"
 
 [git_status]
-format = '$all_status$ahead_behind'
-ahead = '[⬆](bold purple) '
-behind = '[⬇](bold purple) '
-staged = '[✚](green) '
-deleted = '[✖](red) '
-renamed = '[➜](purple) '
-stashed = '[✭](bold cyan) '
-untracked = '[⛯](bold white) '
-modified = '[✱](blue) '
-conflicted = '[═](bold yellow) '
-diverged = '[⇕](bold cyan) '
+format = '([\[ $all_status$ahead_behind\]]($style))'
+ahead = '[⬆](bold purple) ${count} '
+behind = '[⬇](bold purple) ${count} '
+staged = '[✚](blue) ${count} '
+deleted = '[✖](red) ${count} '
+renamed = '[⭮](bold purple) ${count} '
+stashed = '[𝌤](bold cyan) ${count} '
+untracked = '[🞋](bold red) ${count} '
+modified = '[✱](yellow) ${count} '
+conflicted = '[⇼](bold red) ${count} '
+diverged = '[🢰](bold cyan) ${count} '
 up_to_date = ''
-
-
-
-
-
 
