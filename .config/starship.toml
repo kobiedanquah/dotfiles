@@ -28,8 +28,8 @@ format = "[$path]($style)[$read_only]($read_only_style) "
 disabled = true
 
 [character]
-success_symbol = "[➞](bold green)"
-error_symbol   = "[➞](bold red)"
+success_symbol = "[→](bold green)"
+error_symbol   = "[→](bold red)"
 
 [git_branch]
 format = 'via [$branch](bold #7695FF) '
