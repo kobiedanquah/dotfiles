@@ -2,24 +2,16 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 # Custom format
-format = """$os [$username]()[at](bold #0D7C66) ($directory)($git_branch)($git_status)$character """
+format = """($directory)($git_branch)($git_status)$character"""
 
 # Inserts a blank line between shell prompts
 add_newline = false
-
-# Shows the username
-[username]
-style_user = "white"
-style_root = "white"
-format = "[$user]($style) "
-disabled = false
-show_always = true
 
 [directory]
 truncation_length = 50
 truncate_to_repo = true
 style = "yellow"
-home_symbol = "home"
+home_symbol = "~"
 read_only_style = "197"
 read_only = ""
 format = "[$path]($style)[$read_only]($read_only_style) "
@@ -32,13 +24,13 @@ success_symbol = "[→](bold green)"
 error_symbol   = "[→](bold red)"
 
 [git_branch]
-format = 'via [$branch](bold #7695FF) '
+format = 'via [$branch](bold #7695FF)'
 truncation_length = 50
 truncation_symbol = "…/"
 style = "bold green"
 
 [git_status]
-format = '([\[ $all_status$ahead_behind\]]($style))'
+format = ' ([\( $all_status$ahead_behind\)]($style)) '
 ahead = '[⬆](bold purple) ${count} '
 behind = '[⬇](bold purple) ${count} '
 staged = '[✚](blue) ${count} '
@@ -50,4 +42,3 @@ modified = '[✱](yellow) ${count} '
 conflicted = '[⇼](bold red) ${count} '
 diverged = '[🢰](bold cyan) ${count} '
 up_to_date = ''
-
