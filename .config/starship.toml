@@ -21,7 +21,7 @@ disabled = true
 
 [character]
 success_symbol = "[→](bold green)"
-error_symbol   = "[→](bold red)"
+error_symbol = "[→](bold red)"
 
 [git_branch]
 format = 'via [$branch](bold #7695FF)'
@@ -30,7 +30,7 @@ truncation_symbol = "…/"
 style = "bold green"
 
 [git_status]
-format = ' ([\( $all_status$ahead_behind\)]($style)) '
+format = ' ([\( $all_status$ahead_behind\) ]($style))'
 ahead = '[⬆](bold purple) ${count} '
 behind = '[⬇](bold purple) ${count} '
 staged = '[✚](blue) ${count} '
@@ -41,4 +41,4 @@ untracked = '[🞋](bold red) ${count} '
 modified = '[✱](yellow) ${count} '
 conflicted = '[⇼](bold red) ${count} '
 diverged = '[🢰](bold cyan) ${count} '
-up_to_date = ''
+up_to_date = ' '
